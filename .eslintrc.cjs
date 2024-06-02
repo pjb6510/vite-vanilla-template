@@ -21,7 +21,7 @@ module.exports = {
     sourceType: 'module',
     project: ['./tsconfig.json'],
   },
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'import'],
   ignorePatterns: [
     'plugins',
     'dist',
@@ -47,5 +47,6 @@ module.exports = {
       },
     ],
     '@typescript-eslint/prefer-readonly': 'warn',
+    'import/no-default-export': 'error',
   },
 };
